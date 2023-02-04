@@ -52,8 +52,11 @@ public class GestionarPJ : MonoBehaviour
     
     public void Suicidarse(GameObject objetivo)
     {
-        string siguienteEscena = objetivo.GetComponent<ConstructorNPJ>().NextScene;
-        SceneManager.LoadScene(siguienteEscena);
+        if (objetivo is not null)
+        {
+            string siguienteEscena = objetivo.GetComponent<ConstructorNPJ>().NextScene;
+            SceneManager.LoadScene(siguienteEscena);
+        }
     }
 
 
