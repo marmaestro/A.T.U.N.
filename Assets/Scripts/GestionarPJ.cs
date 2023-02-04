@@ -55,9 +55,16 @@ public class GestionarPJ : MonoBehaviour
         if (objetivo is not null)
         {
             string siguienteEscena = objetivo.GetComponent<ConstructorNPJ>().NextScene;
-            SceneManager.LoadScene(siguienteEscena);
+
+            if (siguienteEscena != "FINAL")
+            {
+                SceneManager.LoadScene(siguienteEscena);
+            }
+            else
+            {
+                GameObject.Find("CanvasFinal").GetComponent<CanvasFinal>().enabled = true;
+            }
         }
     }
-
 
 }
