@@ -6,6 +6,42 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/INICIO.unity
+    guid: 22d45359f5759f44fabcb90073322a9f
+  - enabled: 1
+    path: Assets/Scenes/HORA_DEL_BOCADILLO.unity
+    guid: d11f3e834cd07604080455db0a2b0cbd
+  - enabled: 1
+    path: Assets/Scenes/CALLEJON_PUB.unity
+    guid: 0248ba6c18f55dc43b24511240978d83
+  - enabled: 1
+    path: Assets/Scenes/PUB_MUSICA_COSA.unity
+    guid: 05aac9fa61460f040b12c044f93d4d1c
+  - enabled: 1
+    path: Assets/Scenes/ECSTCTSCTSCE.unity
+    guid: 66e2df39aeb3bcf48a077cfdf0d737a0
+  - enabled: 1
+    path: Assets/Scenes/HUERTA.unity
+    guid: f7838fd00aa86d84b8e57a2f474c0bab
+  - enabled: 1
+    path: Assets/Scenes/PERROS.unity
+    guid: deba3006defddd8429107f2b849f6d37
+  - enabled: 1
+    path: Assets/Scenes/LA_LUNA.unity
+    guid: 126b5b97827ed8943a105006e935474f
+  - enabled: 1
+    path: Assets/Scenes/TOLLOS_(INFIERNO).unity
+    guid: ddc5a2692ad37db4680f1583c1d06b8e
+  - enabled: 1
+    path: Assets/Scenes/MONCLOA.unity
+    guid: 7a5e52ab0b9f3304eb728428e61fb488
+  - enabled: 1
+    path: Assets/Scenes/VALLE_PEDROLOS.unity
+    guid: 9e0b20ba53f16c343a31c69fc41b12cf
+  - enabled: 1
+    path: Assets/Scenes/TIMEOUT.unity
+    guid: ee605f4f60b75e3438f835e7211ff9ab
+  - enabled: 1
+    path: Assets/Scenes/LAGO.unity
+    guid: 94159f0c78923454a9a401b268f86436
   m_configObjects: {}
