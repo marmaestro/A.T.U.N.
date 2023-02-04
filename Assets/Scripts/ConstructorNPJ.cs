@@ -4,9 +4,21 @@ using UnityEngine;
 
 public class ConstructorNPJ : MonoBehaviour
 {
-    public string Name;
-    public string Subtitle;
+    [SerializeField]
+    private string npjName;
+    public string NpjName{
+        get{ return npjName;}
+        set{ npjName =value;}
+    }
+[SerializeField]
+    private string subtitle;
+    public string Subtitle{
+        get{return subtitle;}
+        set{ subtitle=value;}
+    }
+
     public string NextPj;
+    public string NextScene;
     // Start is called before the first frame update
     void Start()
     {
