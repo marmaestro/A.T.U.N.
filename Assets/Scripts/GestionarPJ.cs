@@ -46,7 +46,7 @@ public class GestionarPJ : MonoBehaviour
     public void Suicidarse()
     {
         GameObject objetivo = null;
-        float distMenor;
+        float distMenor = float.PositiveInfinity;
 
         foreach (GameObject objt in Objetivos)
         {
