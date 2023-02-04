@@ -37,7 +37,7 @@ public class EnseñarTexto : MonoBehaviour
         textoSubtitulo.GetComponent<TextMeshProUGUI>().text=this.gameObject.GetComponent<ConstructorNPJ>().Subtitle;
     }
     bool DistanciaAPjAdecuada(){
-        print(PJ.GetComponent<Transform>().position +", "+ transform.position+", "+distanciaAPJ+": "+(Vector3.Distance(PJ.GetComponent<Transform>().position, transform.position)<distanciaAPJ));
+        //print(PJ.GetComponent<Transform>().position +", "+ transform.position+", "+distanciaAPJ+": "+(Vector3.Distance(PJ.GetComponent<Transform>().position, transform.position)<distanciaAPJ));
         return(Vector3.Distance(PJ.GetComponent<Transform>().position, transform.position)<distanciaAPJ);
     }
 }

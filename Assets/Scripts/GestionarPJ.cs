@@ -17,27 +17,14 @@ public class GestionarPJ : MonoBehaviour
 
     void Update()
     {
-        Rigidbody2D rigidbody = GetComponent<Rigidbody2D>();
-
-        if (Input.GetKeyDown("A") || Input.GetKeyDown("LEFT"))
-        {
-            rigidbody.AddForce(Vector3.left);
-        }
-        if (Input.GetKeyDown("D") || Input.GetKeyDown("RIGHT"))
-        {
-            rigidbody.AddForce(Vector3.right);
-        }
-        if (Input.GetKeyDown("W") || Input.GetKeyDown("UP"))
-        {
-            rigidbody.AddForce(Vector3.up);
-        }
-        if (Input.GetKeyDown("S") || Input.GetKeyDown("DOWN"))
-        {
-            rigidbody.AddForce(Vector3.down);
-        }
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
+        Vector2 position = transform.position;
+        position.x = position.x + 3.0f * horizontal * Time.deltaTime;
+        position.y = position.y + 3.0f * vertical * Time.deltaTime;
+        transform.position = position;     
         
-        
-        if (Input.GetKeyDown("F"))
+        if (Input.GetKey(KeyCode.F))
         {
             Suicidarse();
         }
