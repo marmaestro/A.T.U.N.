@@ -2,17 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GestionarPJ : MonoBehaviour
 {
     public GameObject PJ;
-    public GameObject[] Objetivos;
-
-    private float threshold;
-
-    void Start()
+    
+    
+    private bool posibleSuicidio;
+    public bool PosibleSuicidio
     {
-        threshold = 2f;
+        set { posibleSuicidio = value; }
+    }
+
+    private GameObject objetivoActual;
+    public GameObject ObjetivoActual
+    {
+        set { objetivoActual = value; }
+    }
+
+    private bool entradaFallida;
+
+    void Awake()
+    {
+        entradaFallida = false;
     }
 
     void Update()
@@ -22,38 +35,25 @@ public class GestionarPJ : MonoBehaviour
         Vector2 position = transform.position;
         position.x = position.x + 3.0f * horizontal * Time.deltaTime;
         position.y = position.y + 3.0f * vertical * Time.deltaTime;
-        transform.position = position;     
+        transform.position = position;
         
-        if (Input.GetKey(KeyCode.F))
+        if (Input.GetKey(KeyCode.F) && posibleSuicidio)
         {
-            Suicidarse();
+            Suicidarse(objetivoActual);
+        }
+
+        if (!entradaFallida)
+        {
+            entradaFallida = true;
+            posibleSuicidio = false;
+            objetivoActual = null;
         }
     }
     
-    public void Suicidarse()
+    public void Suicidarse(GameObject objetivo)
     {
-        GameObject objetivo = null;
-        float distMenor = float.PositiveInfinity;
-
-        foreach (GameObject objt in Objetivos)
-        {
-            float dist = Vector3.Distance(PJ.transform.position, objt.transform.position);
-            if (dist <= threshold)
-            {
-                if (objetivo == null || dist < distMenor)
-                {
-                    objetivo = objt;
-                    distMenor = dist;
-                }
-            }
-        }
-
-        if (objetivo is not null)
-        {
-            string siguienteEscena = objetivo.GetComponent<ConstructorNPJ>().NextScene;
-            SceneManager.LoadScene(siguienteEscena);
-        }
-        
+        string siguienteEscena = objetivo.GetComponent<ConstructorNPJ>().NextScene;
+        SceneManager.LoadScene(siguienteEscena);
     }
 
 
