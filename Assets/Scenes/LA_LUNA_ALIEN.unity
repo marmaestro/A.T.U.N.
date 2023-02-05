@@ -657,6 +657,10 @@ PrefabInstance:
       propertyPath: NextScene
       value: VALLE_PEDROLOS
       objectReference: {fileID: 0}
+    - target: {fileID: 5588055415337272574, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6279548062119246458, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
       propertyPath: NombrePersonaje
       value: Putocalvo
@@ -664,6 +668,10 @@ PrefabInstance:
     - target: {fileID: 7729013533805607375, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729013533805607375, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7729013533805607375, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
       propertyPath: m_LocalPosition.x
