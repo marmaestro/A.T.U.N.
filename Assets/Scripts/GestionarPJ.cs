@@ -31,10 +31,10 @@ public class GestionarPJ : MonoBehaviour
     void Update()
     {
         float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
+        //float vertical = Input.GetAxis("Vertical");
         Vector2 position = transform.position;
         position.x = position.x + 3.0f * horizontal * Time.deltaTime;
-        position.y = position.y + 3.0f * vertical * Time.deltaTime;
+        position.y = position.y; // + 3.0f * vertical * Time.deltaTime;
         transform.position = position;
         
         if (Input.GetKey(KeyCode.F) && posibleSuicidio)
@@ -50,11 +50,27 @@ public class GestionarPJ : MonoBehaviour
         }
     }
     
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        entradaFallida = false;
+        posibleSuicidio = false;
+        objetivoActual = null;
+    }
     public void Suicidarse(GameObject objetivo)
     {
-        string siguienteEscena = objetivo.GetComponent<ConstructorNPJ>().NextScene;
-        SceneManager.LoadScene(siguienteEscena);
-    }
+        if (objetivo is not null)
+        {
+            string siguienteEscena = objetivo.GetComponent<ConstructorNPJ>().NextScene;
 
+            if (siguienteEscena != "FINAL")
+            {
+                SceneManager.LoadScene(siguienteEscena);
+            }
+            else
+            {
+                GameObject.Find("CanvasFinal").GetComponent<CanvasFinal>().enabled = true;
+            }
+        }
+    }
 
 }
