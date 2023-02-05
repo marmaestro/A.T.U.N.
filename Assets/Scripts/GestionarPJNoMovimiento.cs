@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class GestionarPJ : MonoBehaviour
+public class GestionarPJNoMovimiento : MonoBehaviour
 {
     public GameObject PJ;
     
@@ -21,13 +21,6 @@ public class GestionarPJ : MonoBehaviour
         set { objetivoActual = value; }
     }
 
-    private bool entradaFallida;
-
-    void Awake()
-    {
-        entradaFallida = false;
-    }
-
     void Update()
     {
         float horizontal = Input.GetAxis("Horizontal");
@@ -39,23 +32,17 @@ public class GestionarPJ : MonoBehaviour
         
         if (Input.GetKey(KeyCode.F) && posibleSuicidio)
         {
+            Debug.Log("F");
             Suicidarse(objetivoActual);
         }
-
-        if (!entradaFallida)
-        {
-            entradaFallida = true;
-            posibleSuicidio = false;
-            objetivoActual = null;
-        }
     }
-    
+
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        entradaFallida = false;
         posibleSuicidio = false;
         objetivoActual = null;
     }
+    
     public void Suicidarse(GameObject objetivo)
     {
         if (objetivo is not null)

@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 6279548062119246458}
   - component: {fileID: 4433681485551379699}
   m_Layer: 0
-  m_Name: NPJ
+  m_Name: PNJ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

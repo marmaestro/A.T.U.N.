@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/INICIO.unity
     guid: 22d45359f5759f44fabcb90073322a9f
   - enabled: 1
+    path: Assets/Scenes/ADVERTENCIA.unity
+    guid: 9bc3acdab69615d43a00bd9e5118e726
+  - enabled: 1
+    path: Assets/Scenes/TUTORIAL.unity
+    guid: 731a96a438990cb4db70a346951b702c
+  - enabled: 1
     path: Assets/Scenes/HORA_DEL_BOCADILLO.unity
     guid: d11f3e834cd07604080455db0a2b0cbd
   - enabled: 1
@@ -28,6 +34,9 @@ EditorBuildSettings:
     guid: deba3006defddd8429107f2b849f6d37
   - enabled: 1
     path: Assets/Scenes/LA_LUNA.unity
+    guid: 03b0a98287027554dbc69df36e0bbb05
+  - enabled: 1
+    path: Assets/Scenes/LA_LUNA_ALIEN.unity
     guid: 126b5b97827ed8943a105006e935474f
   - enabled: 1
     path: Assets/Scenes/TOLLOS_(INFIERNO).unity
