@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5239844508053157357}
   - component: {fileID: 4577754522667276795}
   m_Layer: 0
-  m_Name: NPJ_VIEJO
+  m_Name: PNJ_VIEJO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

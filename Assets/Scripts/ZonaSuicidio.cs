@@ -14,14 +14,12 @@ public class ZonaSuicidio : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("ENTRA");
         PJ.GetComponent<GestionarPJ>().ObjetivoActual = PNJAsociado;
         PJ.GetComponent<GestionarPJ>().PosibleSuicidio = true;
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("SALE");
         PJ.GetComponent<GestionarPJ>().ObjetivoActual = null;
         PJ.GetComponent<GestionarPJ>().PosibleSuicidio = true;
     }

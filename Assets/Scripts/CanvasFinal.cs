@@ -42,17 +42,7 @@ public class CanvasFinal : MonoBehaviour
 
         if(m_Timer > duracionFade)
         {
-            Application.Quit();
+            Canvas.transform.GetChild(5).GetComponent<PulsarFSalir>().enabled = true;
         }
-    }
-
-    public void VolverAlInicio()
-    {
-        SceneManager.LoadScene("INICIO");
-    }
-
-    public void A()
-    {
-        Debug.Log("A");
     }
 }
