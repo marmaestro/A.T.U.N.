@@ -9,7 +9,7 @@ public class CanvasFinalRickroll : MonoBehaviour
 {
     private float m_Timer;
     private float m_TimerVideo;
-    public const float DURACION_VIDEO = 60.0f;
+    public const float DURACION_VIDEO = 15.0f;
     private const float DURACION_FADE = 5.0f;
     public Canvas Canvas;
     public CanvasGroup CanvasGroup;

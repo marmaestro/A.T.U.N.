@@ -215,7 +215,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: d850109be8526dc4a88abf5be3385240, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -235,7 +235,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394381907}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.36, y: -2.16, z: -7.71}
+  m_LocalPosition: {x: 4.62, y: -2.16, z: -7.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -323,7 +323,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 409055782}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.56, y: -4.96, z: -10}
+  m_LocalPosition: {x: 21.56, y: -0.30999994, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -593,6 +593,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 358703100}
     m_Modifications:
+    - target: {fileID: 813913081312841110, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a7797eea2576026409e8b5c31b26b35b, type: 3}
     - target: {fileID: 4433681485551379699, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
       propertyPath: NextScene
       value: TOLLOS_(INFIERNO)
@@ -607,11 +611,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7729013533805607375, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.12
+      value: -11.98
       objectReference: {fileID: 0}
     - target: {fileID: 7729013533805607375, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.11
+      value: -1.51
       objectReference: {fileID: 0}
     - target: {fileID: 7729013533805607375, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
       propertyPath: m_LocalPosition.z
@@ -773,7 +777,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091997445}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.351962, y: -2.9777064, z: -10}
+  m_LocalPosition: {x: 14.351685, y: -2.7054765, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -907,6 +911,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 358703100}
     m_Modifications:
+    - target: {fileID: 813913081312841110, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a63d45ee25ff2104f8d11cc0023d567e, type: 3}
     - target: {fileID: 4433681485551379699, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
       propertyPath: NextScene
       value: PERROS
@@ -921,11 +929,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7729013533805607375, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.9
+      value: -2.4
       objectReference: {fileID: 0}
     - target: {fileID: 7729013533805607375, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.62
+      value: -2.47
       objectReference: {fileID: 0}
     - target: {fileID: 7729013533805607375, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
       propertyPath: m_LocalPosition.z
@@ -982,17 +990,53 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 591036379857597222, guid: 8c6e3f3ff21a2df459853d530325c167, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 591036379857597222, guid: 8c6e3f3ff21a2df459853d530325c167, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 591036379857597222, guid: 8c6e3f3ff21a2df459853d530325c167, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 5.12
+      objectReference: {fileID: 0}
     - target: {fileID: 1628753499528184919, guid: 8c6e3f3ff21a2df459853d530325c167, type: 3}
       propertyPath: m_Name
       value: Cantante Ortopedia
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494929491995851795, guid: 8c6e3f3ff21a2df459853d530325c167, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 25d9e4dcc1500b34e8a9a971ed4f0abf, type: 3}
+    - target: {fileID: 2494929491995851795, guid: 8c6e3f3ff21a2df459853d530325c167, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494929491995851795, guid: 8c6e3f3ff21a2df459853d530325c167, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494929491995851795, guid: 8c6e3f3ff21a2df459853d530325c167, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3432609616826279236, guid: 8c6e3f3ff21a2df459853d530325c167, type: 3}
       propertyPath: NombrePersonaje
       value: Cantante Ortopedia
       objectReference: {fileID: 0}
+    - target: {fileID: 4690039919236554627, guid: 8c6e3f3ff21a2df459853d530325c167, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5697245272895742814, guid: 8c6e3f3ff21a2df459853d530325c167, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697245272895742814, guid: 8c6e3f3ff21a2df459853d530325c167, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5697245272895742814, guid: 8c6e3f3ff21a2df459853d530325c167, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1000,7 +1044,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5697245272895742814, guid: 8c6e3f3ff21a2df459853d530325c167, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.96
+      value: -3.31
       objectReference: {fileID: 0}
     - target: {fileID: 5697245272895742814, guid: 8c6e3f3ff21a2df459853d530325c167, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1211,6 +1255,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 358703100}
     m_Modifications:
+    - target: {fileID: 813913081312841110, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dc59356bf73539e428f6f02cc53e41cb, type: 3}
     - target: {fileID: 4433681485551379699, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
       propertyPath: NextScene
       value: CALLEJON_PUB
@@ -1218,6 +1266,14 @@ PrefabInstance:
     - target: {fileID: 6279548062119246458, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
       propertyPath: NombrePersonaje
       value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7073999980069088165, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7073999980069088165, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7729013533805607375, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
       propertyPath: m_RootOrder
@@ -1229,7 +1285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7729013533805607375, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.33
+      value: -4.13
       objectReference: {fileID: 0}
     - target: {fileID: 7729013533805607375, guid: 5c07135f666fece4c9e61f6f4f147809, type: 3}
       propertyPath: m_LocalPosition.z

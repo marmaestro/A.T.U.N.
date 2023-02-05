@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class RickRoll : MonoBehaviour
 {
-    private const int MAX_IDLE = 25;
+    private const int MAX_IDLE = 10;
     private float ultimoInstanteIdle;
 
     void Awake()
